@@ -25,7 +25,7 @@ SECRET_KEY = 'v_!4&hh46rv6d@^er7vhun(^a5(zqn430n6z3^ow6ogf&2hpuq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lispcrm-2-68q95.ondigitalocean.app']
 
 
 # Application definition
