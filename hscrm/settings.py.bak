@@ -37,6 +37,7 @@ ALLOWED_HOSTS = ['lispcrm-2-68q95.ondigitalocean.app']
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
