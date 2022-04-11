@@ -111,7 +111,7 @@ class LeadCreateView(OrganisorAndLoginRequiredMixin, generic.CreateView):
         send_mail(
             subject="A lead has been created",
             message="Go to the site to see the new lead",
-            from_email="test@test.com",
+            from_email="crm@lisptechnologies.com",
             recipient_list=["test2@test.com"]
         )   
         return super(LeadCreateView, self).form_valid(form)
@@ -123,8 +123,8 @@ def lead_create(request):
     if request.method == "POST":
         form = LeadModelForm(request.POST)
         if form.is_valid():
-            form.save()
-            return redirect("/leads")
+           form.save()
+           return redirect("/leads")
     context = {
         "form": form
     }
